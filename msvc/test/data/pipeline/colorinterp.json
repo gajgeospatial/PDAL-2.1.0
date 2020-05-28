@@ -1,0 +1,11 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/autzen/autzen.las",
+    {
+      "type":"filters.colorinterp",
+      "minimum": 2.2,
+      "maximum": 3.5
+    },
+    "C:/Development/op3d_active/PDAL-2.1.0/test/temp/autzen_inter.las"
+  ]
+}

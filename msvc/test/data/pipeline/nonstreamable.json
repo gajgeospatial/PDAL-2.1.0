@@ -1,0 +1,10 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/las/1.2-with-color.las",
+    {
+      "type":"filters.chipper"
+      "capacity": 100,
+    },
+    "C:/Development/op3d_active/PDAL-2.1.0/test/temp/hexbin.las"
+  ]
+}

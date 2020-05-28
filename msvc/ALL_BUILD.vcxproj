@@ -1,0 +1,905 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4BEEE8E-D878-326D-AC98-A1165EFF197E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\PDAL-2.1.0\vendor\gtest\include;C:\Development\op3d_active\PDAL-2.1.0\vendor\gtest;C:\Development\op3d_active\libgeotiff-1.6.0\libgeotiff;C:\Program Files (x86)\LAZPERF\include;C:\Development\op3d_active\laszip-3.4.3\include;C:\Development\op3d_active\zlib-1.2.11;C:\Development\op3d_active\liblzma-5.2.5\src\liblzma\api;C:\Development\op3d_active\curl-7.70.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\PDAL-2.1.0\vendor\gtest\include;C:\Development\op3d_active\PDAL-2.1.0\vendor\gtest;C:\Development\op3d_active\libgeotiff-1.6.0\libgeotiff;C:\Program Files (x86)\LAZPERF\include;C:\Development\op3d_active\laszip-3.4.3\include;C:\Development\op3d_active\zlib-1.2.11;C:\Development\op3d_active\liblzma-5.2.5\src\liblzma\api;C:\Development\op3d_active\curl-7.70.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\PDAL-2.1.0\vendor\gtest\include;C:\Development\op3d_active\PDAL-2.1.0\vendor\gtest;C:\Development\op3d_active\libgeotiff-1.6.0\libgeotiff;C:\Program Files (x86)\LAZPERF\include;C:\Development\op3d_active\laszip-3.4.3\include;C:\Development\op3d_active\zlib-1.2.11;C:\Development\op3d_active\liblzma-5.2.5\src\liblzma\api;C:\Development\op3d_active\curl-7.70.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\PDAL-2.1.0\vendor\gtest\include;C:\Development\op3d_active\PDAL-2.1.0\vendor\gtest;C:\Development\op3d_active\libgeotiff-1.6.0\libgeotiff;C:\Program Files (x86)\LAZPERF\include;C:\Development\op3d_active\laszip-3.4.3\include;C:\Development\op3d_active\zlib-1.2.11;C:\Development\op3d_active\liblzma-5.2.5\src\liblzma\api;C:\Development\op3d_active\curl-7.70.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\PDAL-2.1.0\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Development/op3d_active/PDAL-2.1.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/PDAL-2.1.0 -BC:/Development/op3d_active/PDAL-2.1.0/msvc --check-stamp-file C:/Development/op3d_active/PDAL-2.1.0/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Development/op3d_active/PDAL-2.1.0/CMakeLists.txt;C:\Development\op3d_active\PDAL-2.1.0\.git\HEAD;C:\Development\op3d_active\PDAL-2.1.0\.git\refs\heads\master;C:\Development\op3d_active\PDAL-2.1.0\CMakeLists.txt;C:\Development\op3d_active\PDAL-2.1.0\PDALConfig.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\cmake\arbiter.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\common.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\compiler_options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\config.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\cpack.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\ctest.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\curl.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\dimension.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\directories.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\gdal.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\geotiff.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\gtest.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\install_dirs.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\laszip.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\lazperf.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\libraries.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\libxml2.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\lzma.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\macros.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindGeoTIFF.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindLASzip.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindPostgreSQL.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindZSTD.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\GetGitRevisionDescription.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\GetGitRevisionDescription.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\cmake\nlohmann.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\openssl.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\policies.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\rpath.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\test.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\threads.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\win32_compiler_options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\zlib.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\zstd.cmake;C:\Development\op3d_active\PDAL-2.1.0\gitsha.cpp.in;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\git-data\grabRef.cmake;C:\Development\op3d_active\PDAL-2.1.0\pdal_features.hpp.in;C:\Development\op3d_active\abseil-cpp\msvc\abslConfig.cmake;C:\Development\op3d_active\laz-perf-1.4.4\msvc\lazperf-config.cmake;C:\Development\op3d_active\laz-perf-1.4.4\msvc\lazperf-configVersion.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGDAL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibLZMA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\ProcessorCount.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Templates\CPackConfig.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Development/op3d_active/PDAL-2.1.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/PDAL-2.1.0 -BC:/Development/op3d_active/PDAL-2.1.0/msvc --check-stamp-file C:/Development/op3d_active/PDAL-2.1.0/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Development/op3d_active/PDAL-2.1.0/CMakeLists.txt;C:\Development\op3d_active\PDAL-2.1.0\.git\HEAD;C:\Development\op3d_active\PDAL-2.1.0\.git\refs\heads\master;C:\Development\op3d_active\PDAL-2.1.0\CMakeLists.txt;C:\Development\op3d_active\PDAL-2.1.0\PDALConfig.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\cmake\arbiter.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\common.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\compiler_options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\config.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\cpack.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\ctest.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\curl.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\dimension.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\directories.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\gdal.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\geotiff.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\gtest.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\install_dirs.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\laszip.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\lazperf.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\libraries.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\libxml2.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\lzma.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\macros.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindGeoTIFF.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindLASzip.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindPostgreSQL.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindZSTD.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\GetGitRevisionDescription.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\GetGitRevisionDescription.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\cmake\nlohmann.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\openssl.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\policies.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\rpath.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\test.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\threads.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\win32_compiler_options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\zlib.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\zstd.cmake;C:\Development\op3d_active\PDAL-2.1.0\gitsha.cpp.in;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\git-data\grabRef.cmake;C:\Development\op3d_active\PDAL-2.1.0\pdal_features.hpp.in;C:\Development\op3d_active\abseil-cpp\msvc\abslConfig.cmake;C:\Development\op3d_active\laz-perf-1.4.4\msvc\lazperf-config.cmake;C:\Development\op3d_active\laz-perf-1.4.4\msvc\lazperf-configVersion.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGDAL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibLZMA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\ProcessorCount.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Templates\CPackConfig.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Development/op3d_active/PDAL-2.1.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/PDAL-2.1.0 -BC:/Development/op3d_active/PDAL-2.1.0/msvc --check-stamp-file C:/Development/op3d_active/PDAL-2.1.0/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Development/op3d_active/PDAL-2.1.0/CMakeLists.txt;C:\Development\op3d_active\PDAL-2.1.0\.git\HEAD;C:\Development\op3d_active\PDAL-2.1.0\.git\refs\heads\master;C:\Development\op3d_active\PDAL-2.1.0\CMakeLists.txt;C:\Development\op3d_active\PDAL-2.1.0\PDALConfig.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\cmake\arbiter.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\common.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\compiler_options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\config.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\cpack.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\ctest.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\curl.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\dimension.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\directories.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\gdal.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\geotiff.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\gtest.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\install_dirs.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\laszip.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\lazperf.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\libraries.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\libxml2.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\lzma.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\macros.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindGeoTIFF.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindLASzip.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindPostgreSQL.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindZSTD.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\GetGitRevisionDescription.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\GetGitRevisionDescription.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\cmake\nlohmann.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\openssl.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\policies.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\rpath.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\test.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\threads.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\win32_compiler_options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\zlib.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\zstd.cmake;C:\Development\op3d_active\PDAL-2.1.0\gitsha.cpp.in;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\git-data\grabRef.cmake;C:\Development\op3d_active\PDAL-2.1.0\pdal_features.hpp.in;C:\Development\op3d_active\abseil-cpp\msvc\abslConfig.cmake;C:\Development\op3d_active\laz-perf-1.4.4\msvc\lazperf-config.cmake;C:\Development\op3d_active\laz-perf-1.4.4\msvc\lazperf-configVersion.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGDAL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibLZMA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\ProcessorCount.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Templates\CPackConfig.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Development/op3d_active/PDAL-2.1.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/PDAL-2.1.0 -BC:/Development/op3d_active/PDAL-2.1.0/msvc --check-stamp-file C:/Development/op3d_active/PDAL-2.1.0/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Development/op3d_active/PDAL-2.1.0/CMakeLists.txt;C:\Development\op3d_active\PDAL-2.1.0\.git\HEAD;C:\Development\op3d_active\PDAL-2.1.0\.git\refs\heads\master;C:\Development\op3d_active\PDAL-2.1.0\CMakeLists.txt;C:\Development\op3d_active\PDAL-2.1.0\PDALConfig.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\cmake\arbiter.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\common.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\compiler_options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\config.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\cpack.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\ctest.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\curl.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\dimension.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\directories.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\gdal.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\geotiff.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\gtest.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\install_dirs.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\laszip.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\lazperf.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\libraries.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\libxml2.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\lzma.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\macros.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindGeoTIFF.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindLASzip.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindPostgreSQL.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\FindZSTD.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\GetGitRevisionDescription.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\modules\GetGitRevisionDescription.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\cmake\nlohmann.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\openssl.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\policies.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\rpath.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\test.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\threads.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\win32_compiler_options.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\zlib.cmake;C:\Development\op3d_active\PDAL-2.1.0\cmake\zstd.cmake;C:\Development\op3d_active\PDAL-2.1.0\gitsha.cpp.in;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\git-data\grabRef.cmake;C:\Development\op3d_active\PDAL-2.1.0\pdal_features.hpp.in;C:\Development\op3d_active\abseil-cpp\msvc\abslConfig.cmake;C:\Development\op3d_active\laz-perf-1.4.4\msvc\lazperf-config.cmake;C:\Development\op3d_active\laz-perf-1.4.4\msvc\lazperf-configVersion.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGDAL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibLZMA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\ProcessorCount.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Templates\CPackConfig.cmake.in;C:\Development\op3d_active\PDAL-2.1.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Development\op3d_active\PDAL-2.1.0\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\dimbuilder\dimbuilder.vcxproj">
+      <Project>{E0BE6CF9-1EE6-3A37-A64F-DB2934FDC398}</Project>
+      <Name>dimbuilder</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\vendor\gtest\gtest.vcxproj">
+      <Project>{FB0DFB63-A0DD-3623-A598-DBE37388C7DE}</Project>
+      <Name>gtest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\vendor\gtest\gtest_main.vcxproj">
+      <Project>{E0CD5A0F-22AB-3339-A8CB-C84AC3BA7268}</Project>
+      <Name>gtest_main</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\hausdorff_test.vcxproj">
+      <Project>{6F9AB567-BCD1-300A-B823-2151B26E5094}</Project>
+      <Name>hausdorff_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\tools\lasdump\lasdump.vcxproj">
+      <Project>{26AFBFA8-222F-3D75-A95C-0CE735E47BCC}</Project>
+      <Name>lasdump</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\faux\libpdal_plugin_kernel_fauxplugin.vcxproj">
+      <Project>{14F78278-4AEE-3854-9596-8F19ECECCA86}</Project>
+      <Name>libpdal_plugin_kernel_fauxplugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pc2pc_test.vcxproj">
+      <Project>{4D7313B3-1907-3217-AC9F-E166C19590FC}</Project>
+      <Name>pc2pc_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\apps\pdal.vcxproj">
+      <Project>{70B927E2-A770-39D9-B1F6-980F7E8CA1E0}</Project>
+      <Name>pdal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_app_plugin_test.vcxproj">
+      <Project>{F5B40C7A-C2A4-3FF0-A9A8-9B842FC29047}</Project>
+      <Name>pdal_app_plugin_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_app_test.vcxproj">
+      <Project>{CAF11706-BA8C-32CF-BF9A-A3CA95725176}</Project>
+      <Name>pdal_app_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\vendor\arbiter\pdal_arbiter.vcxproj">
+      <Project>{84E99893-A4C2-3359-AA84-D128A260A877}</Project>
+      <Name>pdal_arbiter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_artifact_test.vcxproj">
+      <Project>{53672999-ECF5-3A9C-8E4E-5F18C5393D76}</Project>
+      <Name>pdal_artifact_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\vendor\pdalboost\pdal_boost.vcxproj">
+      <Project>{F5F3E814-C656-35EC-8A90-9B6F8795B96D}</Project>
+      <Name>pdal_boost</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_bounds_test.vcxproj">
+      <Project>{335ED903-2591-3F43-994A-D3C49C7332EE}</Project>
+      <Name>pdal_bounds_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_config_test.vcxproj">
+      <Project>{8284C1E8-7E63-3A58-AD67-6EF3214D4C90}</Project>
+      <Name>pdal_config_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_deflate_test.vcxproj">
+      <Project>{20B941A7-BFDD-35BA-895A-BFB4960FF45B}</Project>
+      <Name>pdal_deflate_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_eigen_test.vcxproj">
+      <Project>{909567C3-97F4-3E5F-A30D-E8EA3C9AC981}</Project>
+      <Name>pdal_eigen_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_file_utils_test.vcxproj">
+      <Project>{383731F8-1217-3DD5-93C8-2115A4B8F0BF}</Project>
+      <Name>pdal_file_utils_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_additional_merge_test.vcxproj">
+      <Project>{26DEF286-6C3D-33DE-8B21-977C0D934A98}</Project>
+      <Name>pdal_filters_additional_merge_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_assign_test.vcxproj">
+      <Project>{554327D0-5D0F-399A-B4BC-F09D89513276}</Project>
+      <Name>pdal_filters_assign_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_chipper_test.vcxproj">
+      <Project>{8819693A-D641-3B12-875D-E4B12715F1BA}</Project>
+      <Name>pdal_filters_chipper_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_colorinterp_test.vcxproj">
+      <Project>{EFCCAF6D-6D44-35D6-A4DC-4BCF8205112E}</Project>
+      <Name>pdal_filters_colorinterp_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_colorization_test.vcxproj">
+      <Project>{777D07C2-AAE5-3DAD-A41C-BF927C3A0857}</Project>
+      <Name>pdal_filters_colorization_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_covariancefeatures_test.vcxproj">
+      <Project>{4E305EA8-4BE2-39E4-90B6-F99762FCAF15}</Project>
+      <Name>pdal_filters_covariancefeatures_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_crop_test.vcxproj">
+      <Project>{612D6A1F-BD05-355F-B878-BDAD2D6EA5D3}</Project>
+      <Name>pdal_filters_crop_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_csf_test.vcxproj">
+      <Project>{BE4980AF-5506-35B1-822C-9673062B0A9C}</Project>
+      <Name>pdal_filters_csf_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_decimation_test.vcxproj">
+      <Project>{98830BE4-9183-3A3C-B0A1-3869D8280E7C}</Project>
+      <Name>pdal_filters_decimation_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_delaunay_test.vcxproj">
+      <Project>{AC3D0C14-11A0-337C-B533-0247FDCC8E02}</Project>
+      <Name>pdal_filters_delaunay_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_divider_test.vcxproj">
+      <Project>{C2665CB2-1302-38D7-B3ED-6A771C80E6CA}</Project>
+      <Name>pdal_filters_divider_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_elm_test.vcxproj">
+      <Project>{0CF0B99E-3D3B-3EDF-B7A7-447C4F1ACFBE}</Project>
+      <Name>pdal_filters_elm_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_ferry_test.vcxproj">
+      <Project>{22547960-1677-375E-9327-AACC127C753B}</Project>
+      <Name>pdal_filters_ferry_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_groupby_test.vcxproj">
+      <Project>{41CD4782-E211-3E99-86D5-1ECE2F0A71C9}</Project>
+      <Name>pdal_filters_groupby_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_hag_test.vcxproj">
+      <Project>{4F0C12C0-CA9C-3633-B57A-1D8DBAB685BD}</Project>
+      <Name>pdal_filters_hag_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_hexbin_test.vcxproj">
+      <Project>{4D68F2DA-08EA-37FD-9816-45B319898B9C}</Project>
+      <Name>pdal_filters_hexbin_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_ht_test.vcxproj">
+      <Project>{1A1B5D94-A9C4-39DA-8A43-97D8F2A3240C}</Project>
+      <Name>pdal_filters_ht_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_icp_test.vcxproj">
+      <Project>{B69B2E00-EC33-3B53-8EE2-2ADD93545193}</Project>
+      <Name>pdal_filters_icp_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_info_test.vcxproj">
+      <Project>{717EE5A6-D93C-3C67-9C71-B1689CC3D84F}</Project>
+      <Name>pdal_filters_info_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_locate_test.vcxproj">
+      <Project>{7AA535CD-AAEA-3C1C-B2FC-2768C781F7A5}</Project>
+      <Name>pdal_filters_locate_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_merge_test.vcxproj">
+      <Project>{15C9A8F0-D56A-36D3-85D9-3C4CF0F59E17}</Project>
+      <Name>pdal_filters_merge_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_miniball_test.vcxproj">
+      <Project>{18156D5D-DEE5-3C42-8E25-408D1538B767}</Project>
+      <Name>pdal_filters_miniball_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_mongoexpression_test.vcxproj">
+      <Project>{431FF282-B684-315B-8C38-4D5948658C2C}</Project>
+      <Name>pdal_filters_mongoexpression_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_neighborclassifier_test.vcxproj">
+      <Project>{55A0872F-674D-3C30-90DE-A3327735101F}</Project>
+      <Name>pdal_filters_neighborclassifier_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_nndistance_test.vcxproj">
+      <Project>{A7B291BA-E891-3FAD-B46D-69248C1D2205}</Project>
+      <Name>pdal_filters_nndistance_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_normal_test.vcxproj">
+      <Project>{3555B378-856B-32C4-B97F-192692CEAC6E}</Project>
+      <Name>pdal_filters_normal_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_overlay_test.vcxproj">
+      <Project>{76A55B7F-D9EE-3F37-875A-EEBD94DB7B79}</Project>
+      <Name>pdal_filters_overlay_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_planefit_test.vcxproj">
+      <Project>{76852CF2-76A2-3957-A868-0B4CD1885C44}</Project>
+      <Name>pdal_filters_planefit_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_pmf_test.vcxproj">
+      <Project>{8F515324-CA7C-3267-9963-66599BCC8D6F}</Project>
+      <Name>pdal_filters_pmf_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_randomize_test.vcxproj">
+      <Project>{EE0E73A2-3ED1-3BFE-A0AF-D55CB3208C78}</Project>
+      <Name>pdal_filters_randomize_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_range_test.vcxproj">
+      <Project>{761B02FD-2A7E-322C-9896-76F29AAD451D}</Project>
+      <Name>pdal_filters_range_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_reciprocity_test.vcxproj">
+      <Project>{54F95B7B-402C-3DF6-97CF-D5B2ABA230E9}</Project>
+      <Name>pdal_filters_reciprocity_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_reprojection_test.vcxproj">
+      <Project>{64D280E3-B1BA-3917-A63B-EB13D2BF471B}</Project>
+      <Name>pdal_filters_reprojection_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_returns_test.vcxproj">
+      <Project>{524A5A23-F0B1-3C30-8475-9784E201BADD}</Project>
+      <Name>pdal_filters_returns_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_separatescanline_test.vcxproj">
+      <Project>{58815F5D-220C-3F73-95FB-9CAB8D64BEFA}</Project>
+      <Name>pdal_filters_separatescanline_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_shell_test.vcxproj">
+      <Project>{E75B9EE3-1EE5-363D-8357-C33A7DF0231E}</Project>
+      <Name>pdal_filters_shell_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_skewness_test.vcxproj">
+      <Project>{254E92CB-2ED7-39CA-B2FA-CC22FD8CB6CD}</Project>
+      <Name>pdal_filters_skewness_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_smrf_test.vcxproj">
+      <Project>{122DB850-F055-31FE-8156-20F4AC8E5894}</Project>
+      <Name>pdal_filters_smrf_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_sort_test.vcxproj">
+      <Project>{5B8B2463-0F76-321C-B595-39D9AAE445D5}</Project>
+      <Name>pdal_filters_sort_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_splitter_test.vcxproj">
+      <Project>{62E2108C-7FD0-3A3B-B37B-1E09FF5E920A}</Project>
+      <Name>pdal_filters_splitter_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_stats_test.vcxproj">
+      <Project>{64D9AB03-BDE8-3313-AACF-37EDABADF13C}</Project>
+      <Name>pdal_filters_stats_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_transformation_test.vcxproj">
+      <Project>{1B999E77-8562-3C2A-92A8-1C700C3696AD}</Project>
+      <Name>pdal_filters_transformation_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_voxel_downsize_test.vcxproj">
+      <Project>{66F905CA-DC8D-3F41-B049-272CB2ACBBAF}</Project>
+      <Name>pdal_filters_voxel_downsize_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_filters_voxel_test.vcxproj">
+      <Project>{EFF6EB60-DBD0-3EA4-A81A-5BA609DB48EB}</Project>
+      <Name>pdal_filters_voxel_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_georeference_test.vcxproj">
+      <Project>{57615C51-DF7D-3BC5-8C35-CE203B4D5A84}</Project>
+      <Name>pdal_georeference_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_info_test.vcxproj">
+      <Project>{FE7B7DA5-9E65-3971-B5F4-2083F6D1B4CA}</Project>
+      <Name>pdal_info_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_bpf_base_test.vcxproj">
+      <Project>{08E17ECD-6BA2-349A-86B9-E86D6914055B}</Project>
+      <Name>pdal_io_bpf_base_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_bpf_zlib_test.vcxproj">
+      <Project>{429C6605-35F1-3110-8824-6C67FB305071}</Project>
+      <Name>pdal_io_bpf_zlib_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_buffer_test.vcxproj">
+      <Project>{5BF8487E-23DD-3D2D-B5A4-24921DD88CA9}</Project>
+      <Name>pdal_io_buffer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_ept_addon_writer_test.vcxproj">
+      <Project>{D806CFE7-48E7-39EB-A89B-BBC76C92405E}</Project>
+      <Name>pdal_io_ept_addon_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_ept_reader_test.vcxproj">
+      <Project>{8DE6282E-F3FF-30FA-A26C-1DF4B9195254}</Project>
+      <Name>pdal_io_ept_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_faux_test.vcxproj">
+      <Project>{02A56FC3-7E4A-32B7-9DA2-9AFAF817B045}</Project>
+      <Name>pdal_io_faux_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_gdal_reader_test.vcxproj">
+      <Project>{C2440BDE-A1DF-3A5F-A90E-508DE083315C}</Project>
+      <Name>pdal_io_gdal_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_gdal_writer_test.vcxproj">
+      <Project>{C593FAFE-DAA8-317C-866D-A0ECF39A7FC7}</Project>
+      <Name>pdal_io_gdal_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_gltf_writer_test.vcxproj">
+      <Project>{1F248959-79F2-3E77-9283-92E95CC38F5F}</Project>
+      <Name>pdal_io_gltf_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_ilvis2_metadata_test.vcxproj">
+      <Project>{F7A5F506-B41D-38D1-8B4C-E27AA20FD27E}</Project>
+      <Name>pdal_io_ilvis2_metadata_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_ilvis2_reader_metadata_test.vcxproj">
+      <Project>{57A79468-B089-3E5B-A53E-9526EEBD8092}</Project>
+      <Name>pdal_io_ilvis2_reader_metadata_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_ilvis2_test.vcxproj">
+      <Project>{EFC6503D-BC30-36B3-9178-B5AA2D939C72}</Project>
+      <Name>pdal_io_ilvis2_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_las_reader_test.vcxproj">
+      <Project>{00A56A9C-4C88-3E1E-8CE0-0C0B5A2DF7D0}</Project>
+      <Name>pdal_io_las_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_las_writer_test.vcxproj">
+      <Project>{76404A77-2224-3346-9368-3DB73D9DB6E1}</Project>
+      <Name>pdal_io_las_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_optech_test.vcxproj">
+      <Project>{86166956-76A7-31F5-BF07-305A44283325}</Project>
+      <Name>pdal_io_optech_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_pcd_reader_test.vcxproj">
+      <Project>{6895EBF3-ED94-339B-AB12-4D1A4CD7E4A0}</Project>
+      <Name>pdal_io_pcd_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_pcd_writer_test.vcxproj">
+      <Project>{70620E98-2AFE-35AA-9A22-330C93BCC53E}</Project>
+      <Name>pdal_io_pcd_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_ply_reader_test.vcxproj">
+      <Project>{0253DAC8-C436-38AF-961C-FA4100DBA2DC}</Project>
+      <Name>pdal_io_ply_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_ply_writer_test.vcxproj">
+      <Project>{6C522030-F262-3E9F-A198-02F2A630912C}</Project>
+      <Name>pdal_io_ply_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_pts_reader_test.vcxproj">
+      <Project>{34931198-5863-3582-AF88-6032C2408144}</Project>
+      <Name>pdal_io_pts_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_qfit_test.vcxproj">
+      <Project>{531B164B-931A-33DE-B419-007FA49CCBD6}</Project>
+      <Name>pdal_io_qfit_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_sbet_reader_test.vcxproj">
+      <Project>{211E7674-6183-36CF-B296-39F2E3042F56}</Project>
+      <Name>pdal_io_sbet_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_sbet_writer_test.vcxproj">
+      <Project>{15E59259-CF45-3384-AC8C-31F80FF930CB}</Project>
+      <Name>pdal_io_sbet_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_terrasolid_test.vcxproj">
+      <Project>{BE446A5E-4F8E-3978-A3FA-507AC15CC223}</Project>
+      <Name>pdal_io_terrasolid_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_text_reader_test.vcxproj">
+      <Project>{78E9E942-01AF-315F-BD3C-BA7489883D58}</Project>
+      <Name>pdal_io_text_reader_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_text_writer_test.vcxproj">
+      <Project>{7EE800CB-4D21-34F4-A69A-21EF8F3EDD8D}</Project>
+      <Name>pdal_io_text_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\vendor\kazhdan\pdal_kazhdan.vcxproj">
+      <Project>{077F2DDB-5F8D-35E8-918F-46160EE12DA9}</Project>
+      <Name>pdal_kazhdan</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_kdindex_test.vcxproj">
+      <Project>{FF14227C-9C9B-31EE-A8DF-0DEC58EC5C80}</Project>
+      <Name>pdal_kdindex_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_kernel_test.vcxproj">
+      <Project>{9EB34DA6-F472-34F9-A26C-357BAF52EAEB}</Project>
+      <Name>pdal_kernel_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_log_test.vcxproj">
+      <Project>{F2531D8A-895E-3653-BCA9-145A26EC904A}</Project>
+      <Name>pdal_log_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_lzma_test.vcxproj">
+      <Project>{FFAF8C24-1064-38B2-B66E-D2D76D4C731F}</Project>
+      <Name>pdal_lzma_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_merge_test.vcxproj">
+      <Project>{F6F7EBC4-DCF6-3AF9-9AF3-94A3E0953533}</Project>
+      <Name>pdal_merge_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_metadata_test.vcxproj">
+      <Project>{9578FB5E-1A0E-3A42-AE88-B0A963F936E1}</Project>
+      <Name>pdal_metadata_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_morton_order_test.vcxproj">
+      <Project>{FFF09E8D-2B2D-30CB-A37F-315656C0B938}</Project>
+      <Name>pdal_morton_order_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_oldpclblock_test.vcxproj">
+      <Project>{CA42070C-A1D8-35D0-A641-4F9B55C3F2B1}</Project>
+      <Name>pdal_oldpclblock_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_options_test.vcxproj">
+      <Project>{2E03EE62-2D0C-3F60-8DCE-9931E75D79FF}</Project>
+      <Name>pdal_options_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_pipeline_manager_test.vcxproj">
+      <Project>{5140F44D-887A-349D-B556-7925662DE89E}</Project>
+      <Name>pdal_pipeline_manager_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_pipeline_writer_test.vcxproj">
+      <Project>{1849C8A8-DAF5-3605-8F0D-1A1EA096D67B}</Project>
+      <Name>pdal_pipeline_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_plugin_manager_test.vcxproj">
+      <Project>{EAAED9C5-87C1-3FD1-B3E2-D19D268F7058}</Project>
+      <Name>pdal_plugin_manager_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_point_table_test.vcxproj">
+      <Project>{22109D7D-11B5-3560-A34C-C33DAC5BEC11}</Project>
+      <Name>pdal_point_table_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_point_view_test.vcxproj">
+      <Project>{0C53A4E3-6EC1-3EB1-9004-3F4FAB47C3A9}</Project>
+      <Name>pdal_point_view_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_polygon_test.vcxproj">
+      <Project>{57D8974D-5D1D-3683-B1B7-8B306500B6C9}</Project>
+      <Name>pdal_polygon_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_program_arg_test.vcxproj">
+      <Project>{BD526AE1-FE87-3E15-A46A-3E0CF8DE52AE}</Project>
+      <Name>pdal_program_arg_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_segmentation_test.vcxproj">
+      <Project>{D1BD3A3D-4299-34DA-BD04-44A6F7F348D0}</Project>
+      <Name>pdal_segmentation_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_spatial_reference_test.vcxproj">
+      <Project>{A0AF1168-82B2-39FE-892E-FBD372FB6FA6}</Project>
+      <Name>pdal_spatial_reference_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_stage_factory_test.vcxproj">
+      <Project>{A61D96FB-A2EF-3F7B-BF65-EB686684A1B4}</Project>
+      <Name>pdal_stage_factory_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_streaming_test.vcxproj">
+      <Project>{C6A49DC9-ECEE-3808-AD12-8AC5E5BCC0C1}</Project>
+      <Name>pdal_streaming_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_support_test.vcxproj">
+      <Project>{7C411355-75F5-3B10-9D50-9BE33DEC64BB}</Project>
+      <Name>pdal_support_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_test_support.vcxproj">
+      <Project>{DA6563A5-5128-3EB0-A058-8A140692B0F0}</Project>
+      <Name>pdal_test_support</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_tile_test.vcxproj">
+      <Project>{E744CE5E-4042-368A-872E-0EE7A42606A3}</Project>
+      <Name>pdal_tile_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_tindex_test.vcxproj">
+      <Project>{9987FEB4-9685-3E17-A557-E386CC74A2C5}</Project>
+      <Name>pdal_tindex_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\pdal\util\pdal_util.vcxproj">
+      <Project>{34CAFA2F-979A-36EE-9872-470BEA674A72}</Project>
+      <Name>pdal_util</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_utils_test.vcxproj">
+      <Project>{9E5F0C97-7F78-3ECB-829E-E41EBFEA1850}</Project>
+      <Name>pdal_utils_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_uuid_test.vcxproj">
+      <Project>{9792B46F-6BAD-3E44-B083-F9E64FAEF6AD}</Project>
+      <Name>pdal_uuid_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_zstd_test.vcxproj">
+      <Project>{7FCE7180-F743-361C-A902-ACC821FDFAF5}</Project>
+      <Name>pdal_zstd_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\pdalcpp.vcxproj">
+      <Project>{3E2F7328-4949-3E07-B554-FE902493C1F8}</Project>
+      <Name>pdalcpp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\random_test.vcxproj">
+      <Project>{D903FB00-9AB1-3898-BCEC-8F0FEE07B78F}</Project>
+      <Name>random_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\translate_test.vcxproj">
+      <Project>{89C89054-43BA-3B97-AE9C-90231C8E75AA}</Project>
+      <Name>translate_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\xml_schema_test.vcxproj">
+      <Project>{A562EC1F-6288-39EB-A0A8-A65C7E97E1BE}</Project>
+      <Name>xml_schema_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,24 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/autzen/autzen-dd.las",
+    {
+      "type":"filters.overlay",
+      "dimension":"Intensity",
+      "datasource":"C:/Development/op3d_active/PDAL-2.1.0/test/data/autzen/attributes.shp",
+      "query":"SELECT CLS FROM attributes where cls!=6",
+      "column":"CLS"
+    },
+    {
+      "type":"filters.overlay",
+      "dimension":"Classification",
+      "datasource":"C:/Development/op3d_active/PDAL-2.1.0/test/data/autzen/attributes.shp",
+      "layer":"attributes",
+      "column":"CLS"
+    },
+    {
+      "filename":"C:/Development/op3d_active/PDAL-2.1.0/test/temp/attributed.las",
+      "scale_x":0.0000001,
+      "scale_y":0.0000001
+    }
+  ]
+}

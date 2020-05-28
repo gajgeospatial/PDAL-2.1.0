@@ -1,0 +1,1 @@
+This project should be installed as PDAL_DIR with ProjectTool.

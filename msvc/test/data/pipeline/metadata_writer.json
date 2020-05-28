@@ -1,0 +1,10 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/las/interesting.las",
+    {
+      "filename":"C:/Development/op3d_active/PDAL-2.1.0/test/temp/metadata-output.las",
+      "forward":"software_id, creation_doy, creation_year",
+      "system_id":"SOMEVALUE"
+    }
+  ]
+}

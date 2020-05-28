@@ -1,0 +1,6 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/nitf/autzen-utm10.ntf",
+    "C:/Development/op3d_active/PDAL-2.1.0/test/temp/nitf.las"
+  ]
+}

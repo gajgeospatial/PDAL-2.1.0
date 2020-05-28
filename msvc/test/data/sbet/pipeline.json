@@ -1,0 +1,6 @@
+{
+  "pipeline": [
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/sbet/2-points.sbet",
+    "C:/Development/op3d_active/PDAL-2.1.0/test/temp/outfile.txt"
+  ]
+}

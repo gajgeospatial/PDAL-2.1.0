@@ -19,10 +19,14 @@
 #
 ###############################################################################
 
-IF(LASZIP_INCLUDE_DIR)
-  # Already in cache, be silent
-  SET(LASZIP_FIND_QUIETLY TRUE)
-ENDIF()
+if(LASZIP_INCLUDE_DIR)
+   message("Laszip Include Dir " ${LASZIP_INCLUDE_DIR})
+endif()
+
+#IF(LASZIP_INCLUDE_DIR)
+# Already in cache, be silent
+#  SET(LASZIP_FIND_QUIETLY TRUE)
+#ENDIF()
 
 IF(WIN32)
   SET(OSGEO4W_IMPORT_LIBRARY laszip3)

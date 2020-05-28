@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3E2F7328-4949-3E07-B554-FE902493C1F8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>pdalcpp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pdalcpp</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">pdalcpp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pdalcpp</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">pdalcpp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\$(LAZPERF_DIR);..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ICONV_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4068;4290;4800;4267;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>4</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;LASZIP_DLL_IMPORT=1;PDAL_DLL_EXPORT=1;WINDOWS;CMAKE_INTDIR="Debug";pdalcpp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;LASZIP_DLL_IMPORT=1;PDAL_DLL_EXPORT=1;WINDOWS;CMAKE_INTDIR=\"Debug\";pdalcpp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(LAZPERF_DIR)\laz-perf;..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(LAZPERF_DIR)\laz-perf;..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdal_i.lib;geotiff_i.lib;laszip3.lib;libxml2.lib;zlib.lib;liblzma.lib;zstd.lib;ws2_32.lib;pdal_util.lib;pdal_arbiter.lib;pdal_kazhdan.lib;libcurl_imp.lib;Shlwapi.lib;libeay32.lib;ssleay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LASZIP3_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBLZMA_DIR)\windows\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZSTD_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(OPENSSL_DIR)\vsbuild\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)pdalcpp.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\$(LAZPERF_DIR);..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ICONV_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4068;4290;4800;4267;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>4</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;LASZIP_DLL_IMPORT=1;PDAL_DLL_EXPORT=1;WINDOWS;CMAKE_INTDIR="Debug";pdalcpp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;LASZIP_DLL_IMPORT=1;PDAL_DLL_EXPORT=1;WINDOWS;CMAKE_INTDIR=\"Debug\";pdalcpp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(LAZPERF_DIR)\laz-perf;..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(LAZPERF_DIR)\laz-perf;..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdal_i.lib;geotiff_i.lib;laszip3.lib;libxml2.lib;zlib.lib;liblzma.lib;zstd.lib;ws2_32.lib;pdal_util.lib;pdal_arbiter.lib;pdal_kazhdan.lib;libcurl_imp.lib;Shlwapi.lib;libeay32.lib;ssleay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LASZIP3_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBLZMA_DIR)\windows\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZSTD_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(OPENSSL_DIR)\vsbuild\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)pdalcpp.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\$(LAZPERF_DIR);..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ICONV_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4068;4290;4800;4267;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>4</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;LASZIP_DLL_IMPORT=1;PDAL_DLL_EXPORT=1;WINDOWS;CMAKE_INTDIR="Release";pdalcpp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;LASZIP_DLL_IMPORT=1;PDAL_DLL_EXPORT=1;WINDOWS;CMAKE_INTDIR=\"Release\";pdalcpp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(LAZPERF_DIR)\laz-perf;..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(LAZPERF_DIR)\laz-perf;..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdal_i.lib;geotiff_i.lib;laszip3.lib;libxml2.lib;zlib.lib;liblzma.lib;zstd.lib;ws2_32.lib;pdal_util.lib;pdal_arbiter.lib;pdal_kazhdan.lib;libcurl_imp.lib;Shlwapi.lib;libeay32.lib;ssleay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LASZIP3_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBLZMA_DIR)\windows\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZSTD_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(OPENSSL_DIR)\vsbuild\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)pdalcpp.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\$(LAZPERF_DIR);..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ICONV_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4068;4290;4800;4267;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>4</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;LASZIP_DLL_IMPORT=1;PDAL_DLL_EXPORT=1;WINDOWS;CMAKE_INTDIR="Release";pdalcpp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;LASZIP_DLL_IMPORT=1;PDAL_DLL_EXPORT=1;WINDOWS;CMAKE_INTDIR=\"Release\";pdalcpp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(LAZPERF_DIR)\laz-perf;..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\vendor\gtest\include;..\vendor\gtest;..\;.\include;..\vendor;..\vendor\eigen;..\vendor\pdalboost;..\vendor\nlohmann;..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(LAZPERF_DIR)\laz-perf;..\..\$(LASZIP3_DIR)\include;..\..\$(ZLIB_DIR);..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(CURL_DIR)\include;..\..\$(LIBXML2_DIR)\Include;..\..\$(ZSTD_DIR)\lib;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdal_i.lib;geotiff_i.lib;laszip3.lib;libxml2.lib;zlib.lib;liblzma.lib;zstd.lib;ws2_32.lib;pdal_util.lib;pdal_arbiter.lib;pdal_kazhdan.lib;libcurl_imp.lib;Shlwapi.lib;libeay32.lib;ssleay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LASZIP3_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBLZMA_DIR)\windows\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZSTD_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(OPENSSL_DIR)\vsbuild\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)pdalcpp.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\filters\ApproximateCoplanarFilter.cpp" />
+    <ClCompile Include="..\filters\AssignFilter.cpp" />
+    <ClCompile Include="..\filters\CSFilter.cpp" />
+    <ClCompile Include="..\filters\ChipperFilter.cpp" />
+    <ClCompile Include="..\filters\ClusterFilter.cpp" />
+    <ClCompile Include="..\filters\ColorinterpFilter.cpp" />
+    <ClCompile Include="..\filters\ColorizationFilter.cpp" />
+    <ClCompile Include="..\filters\CovarianceFeaturesFilter.cpp" />
+    <ClCompile Include="..\filters\CropFilter.cpp" />
+    <ClCompile Include="..\filters\DBSCANFilter.cpp" />
+    <ClCompile Include="..\filters\DEMFilter.cpp" />
+    <ClCompile Include="..\filters\DecimationFilter.cpp" />
+    <ClCompile Include="..\filters\DelaunayFilter.cpp" />
+    <ClCompile Include="..\filters\DividerFilter.cpp" />
+    <ClCompile Include="..\filters\ELMFilter.cpp" />
+    <ClCompile Include="..\filters\EigenvaluesFilter.cpp" />
+    <ClCompile Include="..\filters\EstimateRankFilter.cpp" />
+    <ClCompile Include="..\filters\FarthestPointSamplingFilter.cpp" />
+    <ClCompile Include="..\filters\FerryFilter.cpp" />
+    <ClCompile Include="..\filters\GreedyProjection.cpp" />
+    <ClCompile Include="..\filters\GroupByFilter.cpp" />
+    <ClCompile Include="..\filters\HAGFilter.cpp" />
+    <ClCompile Include="..\filters\HagDelaunayFilter.cpp" />
+    <ClCompile Include="..\filters\HagDemFilter.cpp" />
+    <ClCompile Include="..\filters\HagNnFilter.cpp" />
+    <ClCompile Include="..\filters\HeadFilter.cpp" />
+    <ClCompile Include="..\filters\HexBinFilter.cpp" />
+    <ClCompile Include="..\filters\IQRFilter.cpp" />
+    <ClCompile Include="..\filters\InfoFilter.cpp" />
+    <ClCompile Include="..\filters\IterativeClosestPoint.cpp" />
+    <ClCompile Include="..\filters\LOFFilter.cpp" />
+    <ClCompile Include="..\filters\LocateFilter.cpp" />
+    <ClCompile Include="..\filters\MADFilter.cpp" />
+    <ClCompile Include="..\filters\MergeFilter.cpp" />
+    <ClCompile Include="..\filters\MiniballFilter.cpp" />
+    <ClCompile Include="..\filters\MongoExpressionFilter.cpp" />
+    <ClCompile Include="..\filters\MortonOrderFilter.cpp" />
+    <ClCompile Include="..\filters\NNDistanceFilter.cpp" />
+    <ClCompile Include="..\filters\NeighborClassifierFilter.cpp" />
+    <ClCompile Include="..\filters\NormalFilter.cpp" />
+    <ClCompile Include="..\filters\OutlierFilter.cpp" />
+    <ClCompile Include="..\filters\OverlayFilter.cpp" />
+    <ClCompile Include="..\filters\PMFFilter.cpp" />
+    <ClCompile Include="..\filters\PlaneFitFilter.cpp" />
+    <ClCompile Include="..\filters\PoissonFilter.cpp" />
+    <ClCompile Include="..\filters\ProjPipelineFilter.cpp" />
+    <ClCompile Include="..\filters\RadialDensityFilter.cpp" />
+    <ClCompile Include="..\filters\RandomizeFilter.cpp" />
+    <ClCompile Include="..\filters\RangeFilter.cpp" />
+    <ClCompile Include="..\filters\ReciprocityFilter.cpp" />
+    <ClCompile Include="..\filters\ReprojectionFilter.cpp" />
+    <ClCompile Include="..\filters\ReturnsFilter.cpp" />
+    <ClCompile Include="..\filters\SMRFilter.cpp" />
+    <ClCompile Include="..\filters\SampleFilter.cpp" />
+    <ClCompile Include="..\filters\SeparateScanLineFilter.cpp" />
+    <ClCompile Include="..\filters\ShellFilter.cpp" />
+    <ClCompile Include="..\filters\SkewnessBalancingFilter.cpp" />
+    <ClCompile Include="..\filters\SortFilter.cpp" />
+    <ClCompile Include="..\filters\SplitterFilter.cpp" />
+    <ClCompile Include="..\filters\StatsFilter.cpp" />
+    <ClCompile Include="..\filters\StreamCallbackFilter.cpp" />
+    <ClCompile Include="..\filters\TailFilter.cpp" />
+    <ClCompile Include="..\filters\TransformationFilter.cpp" />
+    <ClCompile Include="..\filters\VoxelCenterNearestNeighborFilter.cpp" />
+    <ClCompile Include="..\filters\VoxelCentroidNearestNeighborFilter.cpp" />
+    <ClCompile Include="..\filters\VoxelDownsizeFilter.cpp" />
+    <ClCompile Include="..\io\BpfCompressor.cpp" />
+    <ClCompile Include="..\io\BpfHeader.cpp" />
+    <ClCompile Include="..\io\BpfReader.cpp" />
+    <ClCompile Include="..\io\BpfWriter.cpp" />
+    <ClCompile Include="..\io\EptAddonWriter.cpp" />
+    <ClCompile Include="..\io\EptReader.cpp" />
+    <ClCompile Include="..\io\FauxReader.cpp" />
+    <ClCompile Include="..\io\GDALReader.cpp" />
+    <ClCompile Include="..\io\GDALWriter.cpp" />
+    <ClCompile Include="..\io\GeotiffSupport.cpp" />
+    <ClCompile Include="..\io\GltfWriter.cpp" />
+    <ClCompile Include="..\io\Ilvis2MetadataReader.cpp" />
+    <ClCompile Include="..\io\Ilvis2Reader.cpp" />
+    <ClCompile Include="..\io\LasHeader.cpp" />
+    <ClCompile Include="..\io\LasReader.cpp" />
+    <ClCompile Include="..\io\LasSummaryData.cpp" />
+    <ClCompile Include="..\io\LasUtils.cpp" />
+    <ClCompile Include="..\io\LasVLR.cpp" />
+    <ClCompile Include="..\io\LasWriter.cpp" />
+    <ClCompile Include="..\io\MemoryViewReader.cpp" />
+    <ClCompile Include="..\io\NullWriter.cpp" />
+    <ClCompile Include="..\io\OGRWriter.cpp" />
+    <ClCompile Include="..\io\OptechReader.cpp" />
+    <ClCompile Include="..\io\PcdHeader.cpp" />
+    <ClCompile Include="..\io\PcdReader.cpp" />
+    <ClCompile Include="..\io\PcdWriter.cpp" />
+    <ClCompile Include="..\io\PlyReader.cpp" />
+    <ClCompile Include="..\io\PlyWriter.cpp" />
+    <ClCompile Include="..\io\PtsReader.cpp" />
+    <ClCompile Include="..\io\QfitReader.cpp" />
+    <ClCompile Include="..\io\SbetReader.cpp" />
+    <ClCompile Include="..\io\SbetWriter.cpp" />
+    <ClCompile Include="..\io\TIndexReader.cpp" />
+    <ClCompile Include="..\io\TerrasolidReader.cpp" />
+    <ClCompile Include="..\io\TextReader.cpp" />
+    <ClCompile Include="..\io\TextWriter.cpp" />
+    <ClCompile Include="..\kernels\DeltaKernel.cpp" />
+    <ClCompile Include="..\kernels\DensityKernel.cpp" />
+    <ClCompile Include="..\kernels\GroundKernel.cpp" />
+    <ClCompile Include="..\kernels\HausdorffKernel.cpp" />
+    <ClCompile Include="..\kernels\InfoKernel.cpp" />
+    <ClCompile Include="..\kernels\MergeKernel.cpp" />
+    <ClCompile Include="..\kernels\PipelineKernel.cpp" />
+    <ClCompile Include="..\kernels\RandomKernel.cpp" />
+    <ClCompile Include="..\kernels\SortKernel.cpp" />
+    <ClCompile Include="..\kernels\SplitKernel.cpp" />
+    <ClCompile Include="..\kernels\TIndexKernel.cpp" />
+    <ClCompile Include="..\kernels\TileKernel.cpp" />
+    <ClCompile Include="..\kernels\TranslateKernel.cpp" />
+    <ClCompile Include="..\pdal\DbReader.cpp" />
+    <ClCompile Include="..\pdal\DbWriter.cpp" />
+    <ClCompile Include="..\pdal\DynamicLibrary.cpp" />
+    <ClCompile Include="..\pdal\EigenUtils.cpp" />
+    <ClCompile Include="..\pdal\GDALUtils.cpp" />
+    <ClCompile Include="..\pdal\Geometry.cpp" />
+    <ClCompile Include="..\pdal\KDIndex.cpp" />
+    <ClCompile Include="..\pdal\Kernel.cpp" />
+    <ClCompile Include="..\pdal\Log.cpp" />
+    <ClCompile Include="..\pdal\Metadata.cpp" />
+    <ClCompile Include="..\pdal\Options.cpp" />
+    <ClCompile Include="..\pdal\PDALUtils.cpp" />
+    <ClCompile Include="..\pdal\PipelineExecutor.cpp" />
+    <ClCompile Include="..\pdal\PipelineManager.cpp" />
+    <ClCompile Include="..\pdal\PipelineReaderJSON.cpp" />
+    <ClCompile Include="..\pdal\PipelineWriter.cpp" />
+    <ClCompile Include="..\pdal\PluginDirectory.cpp" />
+    <ClCompile Include="..\pdal\PluginManager.cpp" />
+    <ClCompile Include="..\pdal\PointLayout.cpp" />
+    <ClCompile Include="..\pdal\PointTable.cpp" />
+    <ClCompile Include="..\pdal\PointView.cpp" />
+    <ClCompile Include="..\pdal\Polygon.cpp" />
+    <ClCompile Include="..\pdal\QuadIndex.cpp" />
+    <ClCompile Include="..\pdal\Reader.cpp" />
+    <ClCompile Include="..\pdal\Scaling.cpp" />
+    <ClCompile Include="..\pdal\SpatialReference.cpp" />
+    <ClCompile Include="..\pdal\SrsBounds.cpp" />
+    <ClCompile Include="..\pdal\Stage.cpp" />
+    <ClCompile Include="..\pdal\StageExtensions.cpp" />
+    <ClCompile Include="..\pdal\StageFactory.cpp" />
+    <ClCompile Include="..\pdal\Streamable.cpp" />
+    <ClCompile Include="..\pdal\SubcommandKernel.cpp" />
+    <ClCompile Include="..\pdal\Writer.cpp" />
+    <ClCompile Include="..\pdal\XMLSchema.cpp" />
+    <ClCompile Include="..\pdal\compression\DeflateCompression.cpp" />
+    <ClCompile Include="..\pdal\compression\LazPerfCompression.cpp" />
+    <ClCompile Include="..\pdal\compression\LazPerfVlrCompression.cpp" />
+    <ClCompile Include="..\pdal\compression\LzmaCompression.cpp" />
+    <ClCompile Include="..\pdal\compression\ZstdCompression.cpp" />
+    <ClCompile Include="..\pdal\gitsha.cpp" />
+    <ClCompile Include="..\pdal\pdal_config.cpp" />
+    <ClCompile Include="..\filters\private\DimRange.cpp" />
+    <ClCompile Include="..\filters\private\Point.cpp" />
+    <ClCompile Include="..\filters\private\Segmentation.cpp" />
+    <ClCompile Include="..\filters\private\csf\CSF.cpp" />
+    <ClCompile Include="..\filters\private\csf\Cloth.cpp" />
+    <ClCompile Include="..\filters\private\csf\Constraint.cpp" />
+    <ClCompile Include="..\filters\private\csf\Particle.cpp" />
+    <ClCompile Include="..\filters\private\csf\Rasterization.cpp" />
+    <ClCompile Include="..\filters\private\csf\XYZReader.cpp" />
+    <ClCompile Include="..\filters\private\csf\c2cdist.cpp" />
+    <ClCompile Include="..\filters\private\csf\point_cloud.cpp" />
+    <ClCompile Include="..\filters\private\delaunator.cpp" />
+    <ClCompile Include="..\filters\private\hexer\HexGrid.cpp" />
+    <ClCompile Include="..\filters\private\hexer\Hexagon.cpp" />
+    <ClCompile Include="..\filters\private\hexer\Path.cpp" />
+    <ClCompile Include="..\filters\private\hexer\Processor.cpp" />
+    <ClCompile Include="..\filters\private\hexer\Segment.cpp" />
+    <ClCompile Include="..\filters\private\mongoexpression\Comparison.cpp" />
+    <ClCompile Include="..\filters\private\mongoexpression\Expression.cpp" />
+    <ClCompile Include="..\filters\private\mongoexpression\LogicGate.cpp" />
+    <ClCompile Include="..\io\private\EptSupport.cpp" />
+    <ClCompile Include="..\io\private\GDALGrid.cpp" />
+    <ClCompile Include="..\kernels\private\density\OGR.cpp" />
+    <ClCompile Include="..\pdal\private\SrsTransform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\generate_dimension_hpp.vcxproj">
+      <Project>{3DB40233-F97D-3A7E-9295-566D6ED5720F}</Project>
+      <Name>generate_dimension_hpp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include=".\vendor\arbiter\pdal_arbiter.vcxproj">
+      <Project>{84E99893-A4C2-3359-AA84-D128A260A877}</Project>
+      <Name>pdal_arbiter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include=".\vendor\kazhdan\pdal_kazhdan.vcxproj">
+      <Project>{077F2DDB-5F8D-35E8-918F-46160EE12DA9}</Project>
+      <Name>pdal_kazhdan</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include=".\pdal\util\pdal_util.vcxproj">
+      <Project>{34CAFA2F-979A-36EE-9872-470BEA674A72}</Project>
+      <Name>pdal_util</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

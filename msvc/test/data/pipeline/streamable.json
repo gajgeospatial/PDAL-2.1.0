@@ -1,0 +1,6 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/las/1.2-with-color.las",
+    "C:/Development/op3d_active/PDAL-2.1.0/test/temp/out.las"
+  ]
+}

@@ -20,19 +20,33 @@
 #  ZSTD_INCLUDE_DIRS, directory containing headers
 #  ZSTD_LIBRARIES, path to libzstd shared library
 #  ZSTD_FOUND, whether zstd has been found
+message("Specialized Find ZSTD Entered")
+if( NOT $ENV{ZSTD_LIBRARY} STREQUAL "" )
+	set(ZSTD_LIBRARY $ENV{ZSTD_LIBRARY})
+	set(ZSTD_LIBRARIES ${ZSTD_LIBRARY})
+	if(NOT $ENV{ZSTD_INCLUDE_DIR} STREQUAL "")
+	   SET(ZSTD_INCLUDE_DIR $ENV{ZSTD_INCLUDE_DIR})
+	else()
+	   SET(ZSTD_INCLUDE_DIR "ZStd_Include_Dir")
+	endif()
+	set(ZSTD_INCLUDE_DIRS ${ZSTD_INCLUDE_DIR})
+	mark_as_advanced(ZSTD_INCLUDE_DIR)
+	mark_as_advanced(ZSTD_LIBRARY)
+	SET(ZSTD_FOUND TRUE)
+else()
+	find_path(ZSTD_INCLUDE_DIR NAMES zstd.h
+		PATH_SUFFIXES "include")
+	mark_as_advanced(ZSTD_INCLUDE_DIR)
 
-find_path(ZSTD_INCLUDE_DIR NAMES zstd.h
-    PATH_SUFFIXES "include")
-mark_as_advanced(ZSTD_INCLUDE_DIR)
+	find_library(ZSTD_LIBRARY NAMES zstd)
+	mark_as_advanced(ZSTD_LIBRARY)
 
-find_library(ZSTD_LIBRARY NAMES zstd)
-mark_as_advanced(ZSTD_LIBRARY)
+	include(FindPackageHandleStandardArgs)
+	find_package_handle_standard_args(ZSTD
+		REQUIRED_VARS ZSTD_LIBRARY ZSTD_INCLUDE_DIR)
 
-include(FindPackageHandleStandardArgs)
-find_package_handle_standard_args(ZSTD
-    REQUIRED_VARS ZSTD_LIBRARY ZSTD_INCLUDE_DIR)
-
-if (ZSTD_FOUND)
-    set(ZSTD_LIBRARIES ${ZSTD_LIBRARY})
-    set(ZSTD_INCLUDE_DIRS ${ZSTD_INCLUDE_DIR})
+	if (ZSTD_FOUND)
+		set(ZSTD_LIBRARIES ${ZSTD_LIBRARY})
+		set(ZSTD_INCLUDE_DIRS ${ZSTD_INCLUDE_DIR})
+	endif()
 endif()

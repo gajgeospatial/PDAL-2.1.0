@@ -1,0 +1,11 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/autzen/autzen-point-format-3.las",
+    {
+      "type":"writers.text",
+      "filename":"C:/Development/op3d_active/PDAL-2.1.0/test/temp/autzen-point-format-3.txt",
+      "order":"Red,Green,X,Y,Blue,Z",
+      "keep_unspecified":false
+    }
+  ]
+}

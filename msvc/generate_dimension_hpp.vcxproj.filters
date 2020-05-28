@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\0f9eda1cf13f6ed399e159cdeab90b0c\Dimension.hpp.rule" />
+    <CustomBuild Include=".\CMakeFiles\aadfa93085643370e96be257f3ba8815\generate_dimension_hpp.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\generate_dimension_hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2770BB72-F396-391A-B302-0A657773279F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

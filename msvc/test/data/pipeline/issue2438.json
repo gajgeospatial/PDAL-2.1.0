@@ -1,0 +1,13 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/las/autzen_trim.las",
+    {
+        "filename" : "C:/Development/op3d_active/PDAL-2.1.0/test/temp/out2438_1.las",
+        "type" : "writers.las"
+    },
+    {
+        "filename" : "C:/Development/op3d_active/PDAL-2.1.0/test/temp/out2438_2.las",
+        "type" : "writers.las"
+    }
+  ]
+}

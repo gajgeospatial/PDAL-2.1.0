@@ -1,0 +1,16 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/autzen/autzen.las",
+    {
+      "type":"filters.ferry",
+      "dimensions":"Z=HAG"
+    },
+    {
+      "type":"filters.programmable",
+      "script":"C:/Development/op3d_active/PDAL-2.1.0/msvc/test/data/autzen/hag.py",
+      "function":"filter",
+      "module":"anything"
+    },
+    "C:/Development/op3d_active/PDAL-2.1.0/test/temp/autzen-hag.las"
+  ]
+}

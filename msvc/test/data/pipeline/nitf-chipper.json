@@ -1,0 +1,12 @@
+{
+  "pipeline": [
+    {
+      "filename": "C:/Development/op3d_active/PDAL-2.1.0/test/data/nitf/autzen-utm10.ntf",
+      "spatialreference": "EPSG:32610"
+    },
+    {
+      "type": "filters.chipper",
+      "capacity": 15
+    }
+  ]
+}

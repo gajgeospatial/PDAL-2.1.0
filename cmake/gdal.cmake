@@ -2,7 +2,12 @@
 # GDAL/OGR support (required)
 #
 function(gdal_find_version _version)
-    file(READ ${GDAL_INCLUDE_DIR}/gdal_version.h versionfile)
+    message("Find GDAL VERSION with " ${GDAL_GCORE_INCLUDE_DIR})
+    if(GDAL_GCORE_INCLUDE_DIR)
+		file(READ ${GDAL_GCORE_INCLUDE_DIR}/gdal_version.h versionfile)
+	else()
+		file(READ ${GDAL_INCLUDE_DIR}/gdal_version.h versionfile)
+	endif()
     string(REGEX MATCH "GDAL_VERSION_MAJOR[\t ]+([0-9]+)" _ ${versionfile})
     set(MAJOR ${CMAKE_MATCH_1})
     string(REGEX MATCH "GDAL_VERSION_MINOR[\t ]+([0-9]+)" _ ${versionfile})

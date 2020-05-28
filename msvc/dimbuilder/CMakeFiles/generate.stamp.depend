@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/PDAL-2.1.0/cmake/common.cmake
+C:/Development/op3d_active/PDAL-2.1.0/cmake/compiler_options.cmake
+C:/Development/op3d_active/PDAL-2.1.0/cmake/directories.cmake
+C:/Development/op3d_active/PDAL-2.1.0/cmake/install_dirs.cmake
+C:/Development/op3d_active/PDAL-2.1.0/cmake/libraries.cmake
+C:/Development/op3d_active/PDAL-2.1.0/cmake/macros.cmake
+C:/Development/op3d_active/PDAL-2.1.0/cmake/modules.cmake
+C:/Development/op3d_active/PDAL-2.1.0/cmake/policies.cmake
+C:/Development/op3d_active/PDAL-2.1.0/cmake/win32_compiler_options.cmake
+C:/Development/op3d_active/PDAL-2.1.0/dimbuilder/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.14/Modules/ProcessorCount.cmake

@@ -1,0 +1,19 @@
+{
+  "pipeline":[
+    {
+      "filename":"C:/Development/op3d_active/PDAL-2.1.0/test/data/las/1.2-with-color.las",
+      "spatialreference":"EPSG:2993"
+    },
+    {
+      "type":"filters.decimation",
+      "step":2,
+      "offset":1
+    },
+    {
+      "type":"writers.text",
+      "filename":"C:/Development/op3d_active/PDAL-2.1.0/test/temp/junk.txt",
+      "delimiter":",",
+      "write_header":false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+ [
+      {
+          "type": "readers.ept",
+          "filename": "C:/Development/op3d_active/PDAL-2.1.0/test/data/ept/ept-star",
+          "resolution": 100
+      },
+      {
+          "type": "writers.ept_addon",
+          "addons": {
+               "C:/Development/op3d_active/PDAL-2.1.0/test/temp/Z": "Z"
+          }
+      }
+  ]

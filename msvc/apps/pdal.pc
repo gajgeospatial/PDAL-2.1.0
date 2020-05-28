@@ -1,0 +1,12 @@
+prefix=C:/Program Files (x86)/PDAL
+exec_prefix=C:/Program Files (x86)/PDAL/bin
+libdir=C:/Program Files (x86)/PDAL/
+includedir=C:/Program Files (x86)/PDAL/include
+
+Name: PDAL
+Description: Point Data Abstraction Library
+Requires:   gdal libxml-2.0
+Version: 2.1.0
+Libs: -L${libdir} -lpdalcpp
+Cflags: -I${includedir}/pdal  
+

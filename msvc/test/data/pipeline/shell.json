@@ -1,0 +1,10 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/autzen/autzen.las",
+    {
+      "type":"filters.shell",
+      "command":"gdalinfo -json C:/Development/op3d_active/PDAL-2.1.0/test/data/gdal/int16.tif"
+    },
+    "C:/Development/op3d_active/PDAL-2.1.0/test/temp/junk.las"
+  ]
+}

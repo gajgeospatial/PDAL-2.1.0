@@ -1,0 +1,10 @@
+{
+  "pipeline":[
+    "C:/Development/op3d_active/PDAL-2.1.0/test/data/autzen/autzen-utm.las",
+    {
+      "type":"filters.chipper",
+      "capacity":25
+    },
+    "C:/Development/op3d_active/PDAL-2.1.0/test/temp/autzen-utm-chipped-25.las"
+  ]
+}

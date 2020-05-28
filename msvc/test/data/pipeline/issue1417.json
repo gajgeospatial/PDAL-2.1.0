@@ -1,0 +1,9 @@
+{
+  "pipeline":[
+    {
+    "filename" : "badfile.reallybad",
+    "type" : "readers.las"
+    },
+    "C:/Development/op3d_active/PDAL-2.1.0/test/temp/out.las"
+  ]
+}
