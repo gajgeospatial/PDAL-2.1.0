@@ -5,3 +5,8 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("faux")
+subdirs("hdf")
+subdirs("mrsid")
+subdirs("openscenegraph")
+subdirs("fbx")
+subdirs("e57")

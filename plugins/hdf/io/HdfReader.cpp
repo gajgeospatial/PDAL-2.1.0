@@ -144,7 +144,8 @@ void HdfReader::parseDimensions()
                 + dimName + "' has value with type '" +
                 std::string(datasetName.type_name()) + "'");
         } else {
-            m_pathDimMap[dimName] = datasetName;
+            std::string temp = datasetName; //vs2019 work around
+            m_pathDimMap[dimName] = temp;
         }
     }
 }

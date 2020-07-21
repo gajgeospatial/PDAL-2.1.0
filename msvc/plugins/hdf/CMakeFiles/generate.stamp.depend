@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/PDAL-2.1.0/cmake/hdf5.cmake
+C:/Development/op3d_active/PDAL-2.1.0/plugins/hdf/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindHDF5.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/ProcessorCount.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/SelectLibraryConfigurations.cmake

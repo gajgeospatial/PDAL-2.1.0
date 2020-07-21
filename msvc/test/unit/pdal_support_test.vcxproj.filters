@@ -6,7 +6,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Object Include=".\pdal_test_support.dir\$(Configuration)\Support.obj" />
+    <Object Include=".\pdal_test_support.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\Support.obj" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Object Libraries">

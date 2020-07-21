@@ -3,9 +3,8 @@
 ####### Any changes to this file will be overwritten by the next CMake run ####
 ####### The input file was PDALConfig.cmake.in                            ########
 
-#get_filename_component(PACKAGE_PREFIX_DIR "${CMAKE_CURRENT_LIST_DIR}/../../../" ABSOLUTE)
-message("Starting PDALConfig.cmake")
-set(PACKAGE_PREFIX_DIR "C:/Development/op3d_active/PDAL-2.1.0/msvc")
+get_filename_component(PACKAGE_PREFIX_DIR "${CMAKE_CURRENT_LIST_DIR}/../../../" ABSOLUTE)
+
 macro(set_and_check _var _file)
   set(${_var} "${_file}")
   if(NOT EXISTS "${_file}")
@@ -30,7 +29,7 @@ set(PDAL_VERSION_MINOR 1)
 set(PDAL_VERSION_PATCH 0)
 
 set_and_check(PDAL_INCLUDE_DIRS "${PACKAGE_PREFIX_DIR}/include")
-set_and_check(PDAL_LIBRARY_DIRS "${PACKAGE_PREFIX_DIR}/vc141/x64/vs2017_Release")
+set_and_check(PDAL_LIBRARY_DIRS "${PACKAGE_PREFIX_DIR}/lib")
 
 include("${CMAKE_CURRENT_LIST_DIR}/PDALTargets.cmake")
 

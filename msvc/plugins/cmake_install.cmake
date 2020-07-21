@@ -35,6 +35,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/faux/cmake_install.cmake")
+  include("C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/hdf/cmake_install.cmake")
+  include("C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/mrsid/cmake_install.cmake")
+  include("C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/openscenegraph/cmake_install.cmake")
+  include("C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/fbx/cmake_install.cmake")
+  include("C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/e57/cmake_install.cmake")
 
 endif()
 

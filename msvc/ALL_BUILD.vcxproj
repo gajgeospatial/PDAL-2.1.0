@@ -160,9 +160,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\e57\libE57Format\E57Format.vcxproj">
+      <Project>{53ECFB39-E5E5-3076-8994-9B7D11C2AA99}</Project>
+      <Name>E57Format</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
     <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\dimbuilder\dimbuilder.vcxproj">
       <Project>{E0BE6CF9-1EE6-3A37-A64F-DB2934FDC398}</Project>
       <Name>dimbuilder</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\fbx\fbxtest.vcxproj">
+      <Project>{65C9A046-4EF1-3016-A091-92A23B0C739C}</Project>
+      <Name>fbxtest</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
@@ -193,6 +205,48 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\faux\libpdal_plugin_kernel_fauxplugin.vcxproj">
       <Project>{14F78278-4AEE-3854-9596-8F19ECECCA86}</Project>
       <Name>libpdal_plugin_kernel_fauxplugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\e57\libpdal_plugin_reader_e57.vcxproj">
+      <Project>{DB3253BF-47D7-315E-A841-BA94C6D7793F}</Project>
+      <Name>libpdal_plugin_reader_e57</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\hdf\libpdal_plugin_reader_hdf.vcxproj">
+      <Project>{7A851B5B-999A-3B83-987E-9F3D158A78FB}</Project>
+      <Name>libpdal_plugin_reader_hdf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\mrsid\libpdal_plugin_reader_mrsid.vcxproj">
+      <Project>{BBA2511B-57F9-3DE4-BCF3-392E600494B1}</Project>
+      <Name>libpdal_plugin_reader_mrsid</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\openscenegraph\libpdal_plugin_reader_openscenegraph.vcxproj">
+      <Project>{602689C7-4BAA-3168-8AA5-00E6D5AB7446}</Project>
+      <Name>libpdal_plugin_reader_openscenegraph</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\e57\libpdal_plugin_writer_e57.vcxproj">
+      <Project>{8FB9C362-F3D6-3C43-A29C-036246DFE48B}</Project>
+      <Name>libpdal_plugin_writer_e57</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\fbx\libpdal_plugin_writer_fbx.vcxproj">
+      <Project>{657EA620-B2EF-3366-9541-2FC981F93B42}</Project>
+      <Name>libpdal_plugin_writer_fbx</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\mrsid\mrsidtest.vcxproj">
+      <Project>{1CE76F0B-3E3E-30FF-B078-DF6A5518A3BB}</Project>
+      <Name>mrsidtest</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
@@ -562,6 +616,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\e57\pdal_io_e57_read_test.vcxproj">
+      <Project>{B7A1DDCA-3D1F-3FF0-ABEC-F2E894984031}</Project>
+      <Name>pdal_io_e57_read_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\e57\pdal_io_e57_write_test.vcxproj">
+      <Project>{B94BCA7B-18CE-30D6-A018-55CC73B9F699}</Project>
+      <Name>pdal_io_e57_write_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
     <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_ept_addon_writer_test.vcxproj">
       <Project>{D806CFE7-48E7-39EB-A89B-BBC76C92405E}</Project>
       <Name>pdal_io_ept_addon_writer_test</Name>
@@ -595,6 +661,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\test\unit\pdal_io_gltf_writer_test.vcxproj">
       <Project>{1F248959-79F2-3E77-9283-92E95CC38F5F}</Project>
       <Name>pdal_io_gltf_writer_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\PDAL-2.1.0\msvc\plugins\hdf\pdal_io_hdf_reader_test.vcxproj">
+      <Project>{2FA729F3-663E-37E9-9A2E-AAADAB169D00}</Project>
+      <Name>pdal_io_hdf_reader_test</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>

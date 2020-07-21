@@ -1,6 +1,12 @@
 C:/Development/op3d_active/PDAL-2.1.0/msvc/CMakeFiles/generate.stamp
 C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/CMakeFiles/generate.stamp
 C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/faux/CMakeFiles/generate.stamp
+C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/hdf/CMakeFiles/generate.stamp
+C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/mrsid/CMakeFiles/generate.stamp
+C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/openscenegraph/CMakeFiles/generate.stamp
+C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/fbx/CMakeFiles/generate.stamp
+C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/e57/CMakeFiles/generate.stamp
+C:/Development/op3d_active/PDAL-2.1.0/msvc/plugins/e57/libE57Format/CMakeFiles/generate.stamp
 C:/Development/op3d_active/PDAL-2.1.0/msvc/vendor/gtest/CMakeFiles/generate.stamp
 C:/Development/op3d_active/PDAL-2.1.0/msvc/test/CMakeFiles/generate.stamp
 C:/Development/op3d_active/PDAL-2.1.0/msvc/test/unit/CMakeFiles/generate.stamp
